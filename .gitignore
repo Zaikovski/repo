@@ -1,46 +1,12 @@
-# ---- Python cache ----
-__pycache__/        # папки с байткодом Python
-*.pyc              # скомпилированные python-файлы
-*.pyo
-*.pyd
+# Игнорируем .env
+.env
 
-# ---- Virtual environments ----
-.venv/             # виртуальное окружение, создаётся в проекте
-venv/
-env/
+# Игнорируем виртуальное окружение
+.venv/
 
-# ---- IDE / редакторы ----
-.idea/             # служебные файлы PyCharm
-.vscode/           # служебные файлы VSCode
+# Игнорируем PyCharm
+.idea/
 
-# ---- OS specific ----
-.DS_Store          # служебные файлы macOS
-Thumbs.db          # служебные файлы Windows
-
-# ---- Environment variables ----
-.env               # твой файл с секретами (пароли к PostgreSQL, JWT, Redis и т.д.)
-*.env              # на случай других env файлов
-config.py          # если там у тебя есть реальные креды/пароли
-
-# ---- Database ----
-*.db               # sqlite (на всякий случай, если тестировала)
-*.sqlite3
-*.sql              # дампы базы
-*.bak              # резервные копии
-*.dump             # дампы PostgreSQL
-/migrations/versions/*   # alembic версии можно держать, но не мусорные
-
-# ---- Logs ----
-*.log              # логи
-logs/              # директория для логов
-
-# ---- Testing / coverage ----
-.coverage
-htmlcov/
-.tox/
-pytest_cache/
-
-# ---- Docker ----
-*.pid
-*.tar
-docker-compose.override.yml  # если есть локальные настройки
+# Игнорируем кэш питона
+__pycache__/
+*.pyc
